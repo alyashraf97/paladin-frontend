@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-title>Settings</mat-card-title>
+    <mat-card-content>
+      <form>
+        <mat-form-field>
+          <mat-label>Setting 1</mat-label>
+          <input matInput [(ngModel)]="settings.setting1" name="setting1">
+        </mat-form-field>
+  
+        <mat-form-field>
+          <mat-label>Setting 2</mat-label>
+          <input matInput [(ngModel)]="settings.setting2" name="setting2">
+        </mat-form-field>
+  
+        <!-- Add more settings fields as necessary -->
+  
+        <button mat-button color="primary" (click)="saveSettings()">Save</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  

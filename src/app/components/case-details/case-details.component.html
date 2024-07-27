@@ -1,0 +1,12 @@
+<mat-card *ngIf="case">
+    <mat-card-title>Case Details</mat-card-title>
+    <mat-card-content>
+      <p><strong>ID:</strong> {{case.id}}</p>
+      <p><strong>Alert ID:</strong> {{case.alertId}}</p>
+      <p><strong>Status:</strong> {{case.status}}</p>
+      <p><strong>Created At:</strong> {{case.createdAt | date:'short'}}</p>
+      <p><strong>Additional Info:</strong> {{case.additionalInfo}}</p>
+      <!-- Add any other fields you need -->
+    </mat-card-content>
+  </mat-card>
+  

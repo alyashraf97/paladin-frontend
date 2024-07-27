@@ -1,0 +1,13 @@
+<mat-card *ngIf="alert">
+    <mat-card-title>Alert Details</mat-card-title>
+    <mat-card-content>
+      <p><strong>ID:</strong> {{alert.id}}</p>
+      <p><strong>Date/Time:</strong> {{alert.dateTime | date:'short'}}</p>
+      <p><strong>Severity:</strong> {{alert.severity}}</p>
+      <p><strong>Description:</strong> {{alert.description}}</p>
+      <p><strong>Status:</strong> {{alert.status}}</p>
+      <p><strong>Additional Info:</strong> {{alert.additionalInfo}}</p>
+      <!-- Add any other fields you need -->
+    </mat-card-content>
+  </mat-card>
+  
